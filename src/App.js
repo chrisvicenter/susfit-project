@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Footer } from "./components/Footer";
+import { Main } from "./styles/Main.css";
+import MaterialTable from "material-table";
+import { SusfitRouter } from "./router/SusfitRouter";
+import { Modal } from "./components/Modal";
 
 function App() {
+  const [openModal, setOpenModal] = useState(false);
+
+  useEffect(() => {
+    setOpenModal(true);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Modal open={openModal} onClose={() => setOpenModal(false)} />
+      <SusfitRouter></SusfitRouter>
+      <Footer></Footer>
+    </>
   );
 }
 

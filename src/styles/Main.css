@@ -1,0 +1,45 @@
+body {
+    background-image: url("../images/double-bubble-outline.png");
+    font-family: 'Courgette', sans-serif;
+}
+
+.carousel{
+    height: 575px;
+    width: 100%;
+}
+
+/*Menú*/
+
+.navbar {
+    margin-top: 0px;
+    background-color: #083b66;
+}
+
+.comp {
+    background-color: #ffffff;
+}
+
+/*Footer container*/
+footer {
+    padding: 10px 10px 10px 10px;
+    background-color: #4bc4d1;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.foot {
+    color: white;
+    padding: 10px 10px 0 10px;
+    background-color: #414141;
+}
+
+.foot a {
+    color: white;
+}
+
+.footer-end-link {
+    color: white;
+}
